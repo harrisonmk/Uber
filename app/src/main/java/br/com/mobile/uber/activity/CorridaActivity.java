@@ -157,7 +157,7 @@ public class CorridaActivity extends AppCompatActivity implements OnMapReadyCall
                 break;
             case Requisicao.STATUS_CANCELADA:
 
-               requisicaoCancelada();
+                requisicaoCancelada();
 
                 break;
         }
@@ -167,9 +167,9 @@ public class CorridaActivity extends AppCompatActivity implements OnMapReadyCall
 
     private void requisicaoCancelada(){
 
-     Toast.makeText(this,"Requisicao foi cancelada pelo passageiro",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Requisicao foi cancelada pelo passageiro",Toast.LENGTH_SHORT).show();
 
-     startActivity(new Intent(CorridaActivity.this,RequisicoesActivity.class));
+        startActivity(new Intent(CorridaActivity.this,RequisicoesActivity.class));
 
     }
 
@@ -559,8 +559,8 @@ public class CorridaActivity extends AppCompatActivity implements OnMapReadyCall
 
         //Verifica o status da requisicao para encerrar
         if(statusRequisicao != null && statusRequisicao.isEmpty()){
-           requisicao.setStatus(Requisicao.STATUS_ENCERRADA);
-           requisicao.atualizarStatus();
+            requisicao.setStatus(Requisicao.STATUS_ENCERRADA);
+            requisicao.atualizarStatus();
         }
 
         return false;
